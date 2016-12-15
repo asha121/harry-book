@@ -8,8 +8,6 @@ public class BookBasketShould {
 
 	@Test
 	public void return_single_book_price() {
-		BookBasket basket = new BookBasket();
-		assertEquals(8, basket.getPrice());
+		assertEquals(8, new BookBasket().getPrice());
 	}
-
 }

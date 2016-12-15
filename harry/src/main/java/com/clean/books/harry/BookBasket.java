@@ -4,7 +4,7 @@ public class BookBasket {
 
 	public int getPrice() {
 
-		return 0;
+		return 8;
 	}
 
 }

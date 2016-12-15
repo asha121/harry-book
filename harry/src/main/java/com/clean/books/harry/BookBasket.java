@@ -12,6 +12,8 @@ public class BookBasket {
 			price = 8.0 * 0.90 * books;
 		else if ((books == 4))
 			price = 8.0 * 0.80 * books;
+		else if ((books == 5))
+			price = 8.0 * 0.75 * books;
 		return price;
 	}
 

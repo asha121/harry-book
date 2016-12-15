@@ -29,4 +29,12 @@ public class BookBasketShould {
 		double delta = 0;
 		assertEquals(expected, actual, delta);
 	}
+
+	@Test
+	public void return_four_different_title_book_price() {
+		double actual = new BookBasket().getPrice(3);
+		double expected = 8.0 * 0.80 * 4;
+		double delta = 0;
+		assertEquals(expected, actual, delta);
+	}
 }

@@ -8,12 +8,18 @@ public class BookBasketShould {
 
 	@Test
 	public void return_single_book_price() {
-		assertEquals(8, new BookBasket().getPrice());
+		double actual = new BookBasket().getPrice(1);
+		double expected = 8;
+		double delta = actual - expected;
+		assertEquals(8.0, actual, delta);
 	}
 
 	@Test
 	public void return_two_different_title_book_price() {
-		BookBasket basket = new BookBasket();
-		assertEquals(16 * 0.95, basket.getPrice());
+		double actual = new BookBasket().getPrice(2);
+		double expected = 8;
+		double delta = actual - expected;
+		assertEquals(15.2,actual,delta);
 	}
+
 }

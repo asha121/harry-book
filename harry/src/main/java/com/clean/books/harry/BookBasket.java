@@ -2,9 +2,12 @@ package com.clean.books.harry;
 
 public class BookBasket {
 
-	public int getPrice() {
+	public double getPrice(int books) {
+		if (books == 1) {
+			return 8.0;
+		}
+		return 8.0 * 0.95 * books;
 
-		return 8;
 	}
 
 }
